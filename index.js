@@ -553,6 +553,7 @@ instance.prototype.action = function(action) {
 			break;
 
 		case 'terminate':
+		//0xFF 0x01 0x01 0xFE
 			buf = new Buffer(4);
 			buf[0] = 0xFF;
 			buf[1] = 0x01;
@@ -846,7 +847,7 @@ instance.prototype.action = function(action) {
 		//0xFF 0x02 0x2E 0xXX 0xFE
 			buf = new Buffer(5);
 			buf[0] = 0xFF;
-			buf[1] = 0x01;
+			buf[1] = 0x02;
 			buf[2] = 0x2E;
 			buf[3] = opt.pl;
 			buf[4] = 0xFE;
@@ -980,7 +981,7 @@ instance.prototype.action = function(action) {
 			buf = new Buffer(4);
 			buf[0] = 0xFF;
 			buf[1] = 0x01;
-			buf[2] = 0x02;
+			buf[2] = 0x1C;
 			buf[3] = 0xFE;
 			break;
 
@@ -989,7 +990,7 @@ instance.prototype.action = function(action) {
 			buf = new Buffer(4);
 			buf[0] = 0xFF;
 			buf[1] = 0x01;
-			buf[2] = 0x02;
+			buf[2] = 0x1B;
 			buf[3] = 0xFE;
 			break;
 			
@@ -998,7 +999,7 @@ instance.prototype.action = function(action) {
 			buf = new Buffer(4);
 			buf[0] = 0xFF;
 			buf[1] = 0x01;
-			buf[2] = 0x02;
+			buf[2] = 0x1E;
 			buf[3] = 0xFE;
 			break;
 			
@@ -1007,7 +1008,7 @@ instance.prototype.action = function(action) {
 			buf = new Buffer(4);
 			buf[0] = 0xFF;
 			buf[1] = 0x01;
-			buf[2] = 0x02;
+			buf[2] = 0x1D;
 			buf[3] = 0xFE;
 			break;
 
@@ -1016,7 +1017,7 @@ instance.prototype.action = function(action) {
 			buf = new Buffer(4);
 			buf[0] = 0xFF;
 			buf[1] = 0x01;
-			buf[2] = 0x02;
+			buf[2] = 0x1F;
 			buf[3] = 0xFE;
 			break;
 
@@ -1025,7 +1026,7 @@ instance.prototype.action = function(action) {
 			buf = new Buffer(4);
 			buf[0] = 0xFF;
 			buf[1] = 0x01;
-			buf[2] = 0x02;
+			buf[2] = 0x20;
 			buf[3] = 0xFE;
 			break;
 	};
